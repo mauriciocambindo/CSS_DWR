@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>Comenzando con la Fotografia</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style media="screen">
+
+    /*Contenido General*/
+
+        body {
+            font-family: 'Lobster', cursive;
+            font-family: 'Dancing Script', cursive;
+            background-color: #02010a;
+        }
+
+        #contenido {
+            width: 900px;
+            margin: 0 auto;
+            min-height: 200px;
+        }
+
+        /*Cabecera*/
+
+        header {
+            background: #5b7989;
+            color: white;
+            border-radius: 10px 10px 0 0;
+            -moz-border-radius: 10px 10px 0 0;
+            -webkit-border-radius: 10px 10px 0 0;
+            text-shadow: 2px 2px #02010a;
+            padding: 15px 0;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        #titulocabecera {
+            width: 70%;
+            text-indent: 15px;
+        }
+
+        #menucabecera {
+            padding-top: 25px;
+            width: 30%;
+            font-size: 18pt;
+        }
+
+        #menucabecera a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #menucabecera {
+            color: white;
+        }
+
+        #menucabecera .actual {
+            text-decoration: none;
+        }
+
+        @media screen and (max-width:900px) {
+            #contenido {
+                width: 100%;
+                margin: 0 auto;
+            }
+            #menucabecera,
+            #titulocabecera {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        /*Imagen Principal*/
+
+        .imagenPrincipal {
+            text-align: center;
+            background: #82c3a6;
+        }
+
+        .imagenPrincipal img {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            width: 90%;
+        }
+
+        /*Imagenes Secundarias*/
+
+        #imagenesSegundarias{
+          background: #d5c75f;
+          display: flex;
+          flex-flow: row wrap;
+        }
+
+        .imgsecundariaIzquierda img{
+          margin-top: 25px;
+          margin-bottom: 25px;
+          width: 90%;
+          border: 1px solid black;
+          transition-property: rotate,-webkit-drop-shadow,-moz-drop-shadow,border;
+          transition-duration: 0.2s;
+        }
+
+        .imgsecundariaIzquierda img:hover{
+          border: 2px solid black;
+          transform: rotate(10deg);
+          -webkit-drop-shadow: #82c3a6;
+          -moz-drop-shadow: #82c3a6;
+        }
+
+        .imgsecundariaIzquierda{
+          text-align: center;
+          width: 50%;
+          }
+
+          .imgsecundariaDerecha{
+            text-align: center;
+            width: 50%;
+          }
+
+          .imgsecundariaDerecha img{
+            margin-top: 25px;
+            margin-bottom: 25px;
+            width: 90%;
+            border: 1px solid black;
+            transition-property: translateX,translateY,-webkit-drop-shadow,-moz-drop-shadow,border;
+            transition-duration: 0.2s;
+          }
+
+          .imgsecundariaDerecha img:hover{
+            transform: translateY(5px);
+            transform: translateX(20px);
+            box-shadow: #82c3a6;
+            border: 2px solid;
+            }
+
+          /*Pie de Pagina*/
+
+          #piePagina{
+            background: #C6d5c5;
+            display: flex;
+            flex-flow: row wrap;
+            -moz-border-radius: 0 0 10px 10px;
+            -webkit-border-radius: 0 0 10px 10px;
+          }
+
+          .contacto{
+            padding:10px;
+            width: 22.5%;
+          }
+
+          .terminos{
+            padding: 10px;
+            width: 22.5%;
+          }
+
+          .social{
+            padding: 10px;
+            width: 22.5%;
+          }
+
+          .social img{
+            margin: 7px;
+            max-width: 15%;
+          }
+
+          .derechos{
+            padding: 10px;
+            width: 22.5%;
+          }
+
+          @media (max-width:900px) {
+              .contacto,.terminos,.social,.derechos {
+                  width: 100%;
+                  margin: 0 auto;
+            }
+          }
+
+    </style>
+</head>
+
+<body>
+    <div id="contenido">
+        <header id="banner" class="body">
+            <div id="titulocabecera">
+                <h1>
+                    Comenzando con la Fotografia
+                </h1>
+            </div>
+
+            <div id="menucabecera">
+                <a href="index.html" class="actual">Inicio</a>
+                <a href="html/paisajes.html">Paisajes</a>
+                <a href="html/retratos.html">Retratos</a>
+            </div>
+        </header>
+
+        <div id="imgPrincipalySecundaria">
+          <div class="imagenPrincipal">
+            <img src="img/principal.jpg" alt="beso marinero">
+          </div>
+
+          <div id=imagenesSegundarias>
+            <div class="imgsecundariaIzquierda">
+              <a href="html/paisajes.html"><img src="img/secundaria_izquierda.jpg" alt="almuerzo en la cima"></a>
+            </div>
+
+            <div class="imgsecundariaDerecha">
+                <a href="html/retratos.html"><img src="img/secundaria_derecha.jpg" alt="Sobrevivencia"></a>
+            </div>
+          </div>
+
+        <footer id="piePagina" class="body">
+
+              <div class="contacto">
+                <h2>Contacto</h2>
+                <p>
+                    <a href="mailto:mauriciocambindo@hotmil.com"></a>
+                    Calle 15 # 22 A 29 (piso 2) <br> Telefono: + 57 (2) 881 20 84 <br> Celular: + 57 (314) 717 55 77
+                </p>
+            </div>
+
+            <div class="terminos">
+                <h2>Terminos</h2>
+                <p>
+                    Con el uso del sitio web se aceptan los terminos y condiciones.
+                </p>
+            </div>
+
+            <div class="social">
+                <h2>Redes Sociales</h2>
+                <p>
+                    Siguenos en:
+                    <br><br>
+                    <a href="https://wwww.pinterest.com/"><img src="img/pinterest.jpg" alt="Pinterest"></a>
+                    <a href="https://wwww.facebook.com/"><img src="img/facebook.jpg" alt="Facebook"></a>
+                    <a href="https://wwww.instagram.com/"><img src="img/instagram.jpg" alt="Instagram"></a>
+                </p>
+            </div>
+
+            <div class="derechos">
+                <h2>Derechos</h2>
+                <p>
+                    &copy; 2019 Mauricio Cambindo
+                </p>
+            </div>
+          </footer>
+
+</body>
+
+</html>
