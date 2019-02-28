@@ -15,6 +15,13 @@
             font-family: 'Lobster', cursive;
             font-family: 'Dancing Script', cursive;
             background-color: #02010a;
+            -webkit-animation:slidein 5s;
+
+            @-webkit-keyframes slidein{
+              0%{margin-top: 150%}
+              60%{margin-top: -5%}
+              100%{margin-top:0%}
+            }
         }
 
         #contenido {
